@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@/components/general/layout";
 import Head from "next/head";
-import HeadNav from "../components/general/head-nav";
-import Blocks from "@/components/services/blocks";
-import { useRouter } from "next/router";
-import { handleDotClick } from "@/utils/handleDotClick";
-import { useWindowSize } from "rooks";
 import { motion } from "framer-motion";
 import Loader from "@/components/general/loader";
-import {Splide, SplideSlide} from "@splidejs/react-splide";
+import {Options, Splide, SplideSlide} from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
 
 const Services = () => {
-  const [slide, setSlide] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   const slideImages = [
@@ -75,10 +69,6 @@ const Services = () => {
       image.onload = handleImageLoad;
     });
   }, []);
-  const handleClick = (number: number) => {
-    handleDotClick(number);
-    setSlide(number);
-  };
   const handleImageLoad = () => {
     setImagesLoaded(true);
   };
@@ -87,7 +77,7 @@ const Services = () => {
     // Render a placeholder until images are loaded
     return <Loader loading={true} />;
   }
-  const desktopOptions = {
+  const desktopOptions: Options = {
     perPage: 1,
     perMove: 1,
     focus: 'center',
@@ -96,13 +86,13 @@ const Services = () => {
     direction: 'ltr',
     arrows: false,
     height: '100vh',
-    speed: '750',
+    speed: 750,
     flickPower: 200,
 
   };
 
   // Define options for mobile
-  const mobileOptions = {
+  const mobileOptions: Options = {
     perPage: 1,
     perMove: 1,
     focus: 'center',
@@ -114,8 +104,8 @@ const Services = () => {
     dragMinThreshold: 10,
     // Add or adjust mobile-specific options here
   };
-
-  const options = outerWidth > 769 ? desktopOptions : mobileOptions;
+  const safeOuterWidth = outerWidth || 0;
+  const options = safeOuterWidth > 769 ? desktopOptions : mobileOptions;
 
 
   return (

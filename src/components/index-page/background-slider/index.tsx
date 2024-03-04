@@ -1,18 +1,61 @@
 import React, { useEffect, useState } from "react";
-import { handleDotClick } from "@/utils/handleDotClick";
 import { useWindowSize } from "rooks";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Loader from "@/components/general/loader";
-import {Splide, SplideSlide} from "@splidejs/react-splide";
+import {Options, Splide, SplideSlide} from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
 
 const BackgroundSlider = () => {
-  const [slide, setSlide] = useState(0);
-  const [width, setWidth] = useState(0);
   const [loading, setLoading] = useState(true);
   const { outerWidth } = useWindowSize();
-  const slideImages = outerWidth > 769 ? [
+  const safeOuterWidth = outerWidth || 0;
+
+  // Define the type for the options object
+  // type Options = {
+  //   perPage: number;
+  //   perMove: number;
+  //   focus: string;
+  //   pagination: boolean;
+  //   paginationDirection: 'ttb' | 'ltr' | 'rtl';
+  //   direction: 'ttb' | 'ltr' | 'rtl';
+  //   arrows: boolean;
+  //   height: string;
+  //   speed?: number; // Ensure speed is a number
+  //   flickPower?: number;
+  //   dragMinThreshold?: number; // Optional property
+  // };
+
+// Define options for desktop
+  const desktopOptions: Options = {
+    perPage: 1,
+    perMove: 1,
+    focus: 'center',
+    pagination: true,
+    paginationDirection: 'ttb',
+    direction: 'ttb',
+    arrows: false,
+    height: '100vh',
+    speed: 750, // Ensure speed is a number
+    flickPower: 200,
+  };
+
+// Define options for mobile
+  const mobileOptions: Options = {
+    perPage: 1,
+    perMove: 1,
+    focus: 'center',
+    pagination: true,
+    paginationDirection: 'ltr',
+    direction: 'ltr',
+    arrows: false,
+    height: '100vh',
+    dragMinThreshold: 10 // Optional property
+  };
+
+  const options = safeOuterWidth > 769 ? desktopOptions : mobileOptions;
+
+  const slideImages = safeOuterWidth > 769 ? [
     "/first-slide.webp",
     "/second-slide.webp",
     "/third-slide.webp",
@@ -84,14 +127,8 @@ const BackgroundSlider = () => {
     </motion.div>,
   ];
 
-  const handleClick = (number: number) => {
-    handleDotClick(number);
-    setSlide(number);
-  };
-
   useEffect(() => {
     if (outerWidth) {
-      setWidth(outerWidth);
       setTimeout(() => {
         setLoading(false);
       }, 300);
@@ -99,36 +136,6 @@ const BackgroundSlider = () => {
   }, [outerWidth]);
 
   const router = useRouter();
-
-  const desktopOptions = {
-    perPage: 1,
-    perMove: 1,
-    focus: 'center',
-    pagination: true,
-    paginationDirection: 'ttb',
-    direction: 'ttb',
-    arrows: false,
-    height: '100vh',
-
-    speed: '750',
-    flickPower: 200,
-  };
-
-  // Define options for mobile
-  const mobileOptions = {
-    perPage: 1,
-    perMove: 1,
-    focus: 'center',
-    pagination: true,
-    paginationDirection: 'ltr',
-    direction: 'ltr',
-    arrows: false,
-    height: '100vh',
-    dragMinThreshold: 10
-    // Add or adjust mobile-specific options here
-  };
-
-  const options = outerWidth > 769 ? desktopOptions : mobileOptions;
 
   return loading ? (
     <Loader loading={loading} />
