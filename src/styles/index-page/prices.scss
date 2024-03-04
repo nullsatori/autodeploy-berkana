@@ -1,0 +1,184 @@
+.prices {
+  background: #f6f6f6;
+  @media screen and (width < 300px) {
+    .info {
+      .item {
+        padding-left: 3%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (width < 768px) {
+    .downloads {
+      .card {
+        p {
+          width: 28%;
+        }
+      }
+    }
+  }
+  @media screen and (width > 400px) and (max-width: 768px) {
+    .info {
+      .item {
+      }
+      h1 {
+      }
+      p {
+        width: 75%;
+      }
+    }
+    .downloads {
+      .card {
+        p {
+          width: 22%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .downloads {
+      flex-direction: column;
+      svg {
+        position: relative;
+        bottom: 15px;
+      }
+      .card {
+        height: 50vh;
+        &:nth-child(2) {
+          p {
+            &:before {
+              content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+            }
+          }
+        }
+        p {
+          top: 40%;
+          left: 60%;
+          text-align: end;
+        }
+      }
+    }
+    .info {
+      flex-direction: column;
+      .item {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        padding: 12.5% 5%;
+        h1 {
+          margin-bottom: 3%;
+        }
+      }
+    }
+  }
+  @media screen and (height < 600px) and (orientation: landscape) {
+    .info {
+      .item {
+        max-height: fit-content;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        h1 {
+          margin: 0;
+        }
+        p {
+          margin-right: 20%;
+          width: 30vw;
+          margin-left: 20%;
+        }
+      }
+    }
+  }
+  @media screen and (width > 1300px) {
+    .info {
+      .item {
+      }
+    }
+  }
+  @media screen and (width > 768px) {
+    .downloads {
+      .card {
+        width: 50vw;
+
+        svg {
+          position: relative;
+          bottom: 20px;
+        }
+        p {
+          width: fit-content;
+          top: 40%;
+          left: 54%;
+        }
+      }
+    }
+    .info {
+      .item {
+        flex-direction: column;
+        padding-left: 1%;
+        padding-right: 1%;
+        justify-content: center;
+
+        h1 {
+          margin-bottom: 2%;
+        }
+        p {
+          align-self: end;
+        }
+        width: 33.3vw;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    .item {
+      display: flex;
+      height: 32.4vh;
+      border: 1px solid #e4e4e4;
+      border-bottom: 1px solid #fefefe;
+      h1,
+      p {
+        color: #185f65;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: 68px;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+      }
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+  .downloads {
+    display: flex;
+
+    .card {
+      height: 40vh;
+
+      display: flex;
+      flex-direction: column;
+      background: #185f65;
+      color: #d4a95a;
+      svg {
+        margin: auto;
+      }
+      p {
+        position: relative;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 90%;
+        letter-spacing: -0.055em;
+        text-transform: uppercase;
+      }
+      &:nth-child(1) {
+        color: #185f65;
+        background: #d4a95a;
+      }
+    }
+  }
+}

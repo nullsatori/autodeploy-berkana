@@ -1,0 +1,12 @@
+.events {
+  height: 100vh;
+  background: white;
+  .wrapper {
+    width: calc(100vw - 120px);
+    margin: 0 auto;
+    padding-top: 2%;
+    h1 {
+      font-size: 50px;
+    }
+  }
+}

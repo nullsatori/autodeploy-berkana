@@ -1,0 +1,200 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  height: 8rem;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: absolute;
+  color: #f6f6f6;
+  z-index: 1;
+  .white-links {
+    color: #f6f6f6;
+    transition: color 0.3s ease-in, border-bottom 0.3s ease-in;
+    &.active {
+      border-bottom: 3px solid #f6f6f6;
+      transition: color 0.3s ease-in, border-bottom 0.3s ease-in;
+    }
+  }
+  .blue-links {
+    color: #185f65;
+    transition: color 0.3s ease-in, border-bottom 0.3s ease-in;
+    &.active {
+      border-bottom: 3px solid #185f65;
+      transition: color 0.3s ease-in, border-bottom 0.3s ease-in;
+    }
+  }
+  .yellow-links {
+    color: #d4a95a;
+    transition: color 0.3s ease-in, border-bottom 0.3s ease-in;
+    &.active {
+      color: white;
+      border-bottom: 3px solid white;
+      transition: color 0.3s ease-in, border-bottom 0.3s ease-in;
+    }
+  }
+  .active {
+    padding-top: 3px;
+  }
+  @media screen and (width < 300px) {
+    .logo {
+      width: 120px;
+    }
+    .menu {
+      width: 50px;
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu {
+      width: 50px;
+    }
+  }
+  @media screen and (min-width: 769px) and (min-height: 769px) {
+  }
+  @media screen and (max-width: 768px), (orientation: portrait) {
+    display: flex;
+    width: calc(100vw - 60px);
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .wrapper {
+      height: 12px;
+    }
+    > a {
+
+    }
+    .logo {
+      max-height: 30px;
+    }
+    .project,
+    .temp,
+    .language,
+    .phone {
+      visibility: hidden;
+      width: 0px;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1270px) {
+    display: flex;
+    width: calc(100vw - 60px);
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    p {
+      font-size: 13px;
+    }
+    .temp {
+      margin-left: 2vw;
+      margin-right: 4vw;
+    }
+    .project {
+      margin-right: 4vw;
+    }
+    .language {
+      margin-right: 3vw;
+    }
+    .phone {
+      margin-right: 4vw;
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 769px) {
+    top: 0px;
+    .logo {
+      height: 40px;
+    }
+  }
+  @media screen and (min-width: 1270px) and (max-width: 1366px) {
+    display: flex;
+    width: calc(100vw - 60px);
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    p {
+      font-size: 14px;
+    }
+    .temp {
+      margin-left: 10vw;
+      margin-right: 6vw;
+    }
+    .project {
+      margin-right: 4vw;
+    }
+    .language {
+      margin-right: 4vw;
+    }
+    .phone {
+      margin-right: 4vw;
+    }
+  }
+  @media screen and (min-width: 1366px) {
+    p {
+      font-size: 15px;
+    }
+    .phone {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 1367px) {
+    display: flex;
+    width: calc(100vw - 200px);
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .wrapper {
+      margin-left: auto;
+      .phone {
+        margin-right: 4.7vw;
+        margin-left: 3.7vw;
+      }
+      .project {
+        margin: 0 7vw;
+      }
+    }
+  }
+
+  a,
+  p {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  p + .active {
+  }
+
+  .temp {
+    a:nth-child(2) {
+      margin: 0 3vw;
+      p {
+      }
+    }
+  }
+
+  .language svg {
+    margin-left: 8px;
+  }
+
+  .logo {
+    display: flex;
+  }
+  .menu {
+    z-index: 1;
+    height: 12px;
+  }
+
+  .temp,
+  .language,
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

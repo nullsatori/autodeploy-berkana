@@ -1,0 +1,71 @@
+.elevator {
+  @media (width >= 900px) {
+    .cards {
+      .container {
+        width: 95%;
+        .card {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+.pneumatic {
+  @media (width >= 900px) {
+    .cards {
+      .card {
+        width: 40%;
+        margin-right: 10px;
+      }
+    }
+  }
+  @media (width >= 1200px) {
+    .cards {
+      .card {
+        width: 23vw;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.service-page {
+  width: 100%;
+  background: white;
+  color: #185f65;
+  @media (width >= 900px) {
+  }
+  @media (width > 1200px) {
+    .wrapper {
+      width: 50%;
+    }
+  }
+  @media (width <= 1200px) {
+    .wrapper {
+      width: 80%;
+    }
+  }
+  .wrapper {
+    margin: 0 auto;
+    padding-top: 40px;
+    .tags {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    > p {
+      line-height: 161%;
+      padding: 5px 0;
+      font-size: 1.07rem;
+    }
+    .info {
+      background: #faf5ec;
+      text-align: center;
+      font-size: 1.33rem;
+      margin: 4rem 0;
+      > p {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+    }
+  }
+}

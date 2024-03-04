@@ -1,0 +1,66 @@
+.embla-carousel {
+  max-width: 65vw;
+  position: relative;
+  overflow: hidden;
+  .embla__prev {
+    width: 120px;
+    height: 120px;
+    background: rgba(24, 95, 101, 1);
+    position: absolute;
+    left: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-radius: 50%;
+    svg {
+      path {
+        fill: rgba(212, 169, 90, 1);
+      }
+    }
+  }
+  .embla-carousel__viewport {
+    width: 100%;
+  }
+  .embla-carousel__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    p {
+      position: absolute;
+      bottom: 45px;
+      right: 45px;
+    }
+    .logo {
+      max-width: 150px;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  @media screen and (width > 1300px) {
+    right: 7.5%;
+    .item {
+      width: 725px;
+      height: 533px;
+    }
+    .embla-carousel__slide {
+      margin-left: 109px;
+    }
+  }
+  @media screen and (900px < width < 1300px) {
+    right: 5.5%;
+    .item {
+      width: 608px;
+      height: 375px;
+    }
+    .embla-carousel__slide {
+      margin-left: 109px;
+    }
+  }
+  @media screen and (width < 900px) {
+  }
+}

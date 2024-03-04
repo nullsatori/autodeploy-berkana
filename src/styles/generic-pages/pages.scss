@@ -1,0 +1,113 @@
+.page-content {
+  background: white;
+  padding-top: 4rem;
+  .page-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #185f65;
+    @media screen and (width > 300px) {
+      width: calc(100vw - 20px);
+    }
+    @media screen and (width > 600px) {
+      width: calc(100vw - 120px);
+    }
+
+    > div {
+      font-size: 1.1rem;
+      strong {
+        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 5px; /* Add some spacing between the last <strong> and the text */
+      }
+      a {
+        font-size: 1.2rem;
+      }
+    }
+    @media screen and (width > 1600px) {
+      > div > p:nth-child(2) {
+        white-space: pre-line;
+        width: 30%;
+      }
+    }
+
+    h2:first-of-type {
+      color: #d4a95a;
+      margin-top: 2rem;
+    }
+    &::first-line {
+      width: 100px;
+    }
+    strong:first-of-type {
+      display: flex;
+      align-items: baseline;
+      > p {
+        margin-left: 0.5rem;
+      }
+      a,
+      p:first-child {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+    ul {
+      margin: 1rem 0;
+      li {
+        margin-left: 3rem;
+        padding: 0.5rem 0;
+      }
+    }
+    table {
+      border-collapse: separate;
+
+      width: 100%;
+      margin: 2rem auto;
+      display: grid;
+      tr {
+        position: relative;
+        height: 4rem;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #edf4fb;
+        }
+        &::before {
+          top: -1px;
+        }
+        td {
+          position: relative;
+          padding-left: 1rem;
+          width: 50vw;
+          &:last-child:not(:first-child)::after {
+            display: none;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -1px;
+            width: 0.5px;
+            height: 100%;
+            background-color: #edf4fb;
+          }
+        }
+        &:first-child {
+          td:first-child {
+            width: 10rem;
+          }
+        }
+      }
+    }
+  }
+
+  b {
+    &:after {
+      content: " ";
+    }
+  }
+}

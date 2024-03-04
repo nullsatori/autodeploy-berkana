@@ -1,0 +1,39 @@
+
+.partners {
+  background: #f6f6f6;
+  display: grid;
+  justify-content: start;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 2fr);
+    .partner {
+      width: 50vw;
+      height: 50vw;
+    }
+    .mobile {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    .partner {
+      width: 25vw;
+      height: 25vw;
+    }
+  }
+  .partner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+
+    img {
+      mix-blend-mode: multiply;
+      max-height: 33%;
+      max-width: 80%;
+    }
+  }
+}

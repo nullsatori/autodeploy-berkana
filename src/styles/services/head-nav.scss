@@ -1,0 +1,136 @@
+.headNav {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  padding-top: 12rem;
+  .nav-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 3rem;
+  }
+  .container {
+    height: 100%;
+    margin: 0 auto;
+  }
+  @media (width < 500px) {
+    .nav {
+    }
+    .wrapper {
+      margin-top: 50px;
+      .right {
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+  @media (width < 886px) {
+    .wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container {
+      padding-bottom: 5rem;
+      width: 90%;
+    }
+    .right {
+      margin-top: 1.4rem;
+    }
+    .left {
+      svg,
+      p {
+        visibility: hidden;
+        width: 0;
+      }
+      h4 {
+      }
+    }
+  }
+  @media (width >= 886px) {
+    padding-bottom: 100px;
+    .right {
+      margin-left: 3.66rem;
+      align-items: center;
+    }
+    .left {
+      p {
+        margin-left: 2.66rem;
+        margin-right: 7.33rem;
+      }
+    }
+  }
+  @media (500px < width < 1000px) {
+    .wrapper {
+      margin-top: 30px;
+      //margin-left: 4rem;
+      .right {
+      }
+    }
+  }
+  @media (width >= 1000px) {
+    .wrapper {
+      align-items: center;
+      margin-top: 40px;
+      width: 93vw;
+      .left {
+      }
+      .right {
+        margin-left: auto;
+      }
+    }
+  }
+  @media (886px < width < 1300px) {
+    .right {
+      align-items: center;
+    }
+  }
+  @media (width > 1300px) {
+    .right {
+      margin-right: 15rem;
+    }
+  }
+  .nav {
+    margin-bottom: auto;
+    color: rgba(255, 255, 255, 0.33);
+    position: relative;
+    top: 7%;
+
+    span {
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex: 1;
+    h4 {
+      line-height: 85.023%;
+      letter-spacing: -2.64px;
+      font-size: 3.2rem;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+    }
+    .right {
+      display: flex;
+
+      p {
+        text-decoration: underline;
+        font-size: 1.33rem;
+        min-width: fit-content;
+        &:nth-child(1) {
+          margin-right: 4.8rem;
+        }
+        &:nth-child(2) {
+          color: #da9a23;
+        }
+      }
+    }
+  }
+}

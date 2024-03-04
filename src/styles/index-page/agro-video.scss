@@ -1,0 +1,258 @@
+.agro-video {
+  background: #185f65;
+  color: #d4a95a;
+  display: flex;
+  .playback-btn {
+    position: relative;
+    left: 0;
+    top: 0;
+
+  }
+  .embla-desktop {
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  .embla__container {
+    display: flex;
+  }
+
+  @media screen and (width > 768px) {
+    align-items: center;
+    max-height: fit-content;
+    .wrapper {
+      height: fit-content;
+      margin-left: 5%;
+    }
+    .embla-desktop {
+      display: flex;
+      flex-direction: column;
+      .embla__container {
+        margin-right: 35%;
+        .embla__slide {
+          > p {
+            width: 35.08vw;
+            margin: 20px 0 0 0;
+          }
+          > div {
+            margin-right: 50px;
+            width: 35.08vw;
+            height: calc((9 / 16) * 35.1vw);
+          }
+        }
+      }
+      .embla__next {
+        position: absolute;
+        right: 0;
+        margin-top: 8%;
+        margin-right: 5vw;
+        border-radius: 50%;
+        border: none;
+        background: #d4a95a;
+      }
+    }
+
+    .title {
+      position: relative;
+      height: fit-content;
+
+      align-self: start;
+    }
+    .info {
+      margin-right: 50px;
+      p {
+        margin: 5% 0;
+      }
+    }
+  }
+  @media screen and (height < 600px) and (orientation: landscape) {
+    justify-content: center;
+
+    .btn {
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      align-self: start;
+      margin: 0 0 25px 0;
+    }
+    .wrapper {
+      width: 80vw;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .info {
+      width: 75vw;
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 30px;
+        margin-bottom: 5%;
+      }
+    }
+    .embla__container {
+      height: 100%;
+    }
+    .embla__slide {
+      width: fit-content;
+      height: fit-content;
+      > p {
+        width: 40vw;
+        margin: 0 auto;
+        font-size: 14px;
+      }
+      > div {
+        margin: 5% 20px;
+        width: 40vw;
+        height: calc((9 / 16) * 40vw);
+      }
+    }
+  }
+  @media screen and (width <= 768px) and (orientation: portrait) {
+    justify-content: center;
+    flex-direction: column;
+    .btn {
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      align-self: start;
+      margin: 0 0 25px 0;
+    }
+    .wrapper {
+      width: 80vw;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .info {
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 35px;
+        margin-bottom: 5%;
+      }
+    }
+    .embla__container {
+      height: 100%;
+    }
+    .embla__slide {
+      width: fit-content;
+      height: fit-content;
+      > p {
+        width: 90vw;
+        margin: 20px auto 0 auto;
+        font-size: 14px;
+      }
+      > div {
+        margin: 0 20px;
+        width: 90vw;
+        height: calc((9 / 16) * 90vw);
+      }
+    }
+    .embla__next {
+      display: none;
+    }
+  }
+
+  @media screen and (768px < width < 1367px) {
+    .info {
+      max-width: 350px;
+    }
+    h1 {
+      margin: 25px 0 12px 0;
+      font-size: 50px;
+    }
+    .btn {
+      margin-bottom: 50px;
+    }
+    .embla__slide {
+      > p {
+        font-size: 15px;
+      }
+    }
+    .embla__next {
+      display: none;
+    }
+  }
+  @media screen and (1367px < width < 1700px) {
+    .embla__next {
+      width: 100px;
+      height: 100px;
+    }
+    .info {
+      width: 25vw;
+    }
+    h1 {
+      font-size: 53px;
+    }
+    .embla__slide {
+    }
+  }
+
+  @media screen and (width > 1700px) {
+    .embla__next {
+      width: 100px;
+      height: 100px;
+    }
+    .info {
+      width: 25vw;
+    }
+    h1 {
+      font-size: 60px;
+    }
+  }
+  @media screen and (width > 1367px) {
+    height: 100vh;
+    .title {
+      right: 7vw;
+    }
+    > div {
+      display: flex;
+    }
+  }
+  @media screen and (width < 1367px) {
+    .wrapper {
+      flex-direction: column;
+      width: 80vw;
+
+      .title {
+        width: fit-content;
+        padding-top: 50px;
+      }
+      .info {
+      }
+    }
+  }
+  h1 {
+    font-weight: 800;
+    line-height: 85.02%;
+    letter-spacing: -0.089em;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .wrapper {
+    display: flex;
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .btn {
+    color: #d4a95a;
+  }
+}
