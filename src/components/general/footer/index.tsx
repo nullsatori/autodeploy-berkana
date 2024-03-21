@@ -2,7 +2,6 @@ import React from "react";
 import { handleNavigation } from "@/utils/utils";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
 
 const Footer: React.FC = () => {
   const router = useRouter();
@@ -75,7 +74,7 @@ const Footer: React.FC = () => {
               </Link>
             </div>
             <div className="bottom">
-              <p>© 2012–2023 «Беркана»</p>
+              <p>© 2012–2024 «Беркана»</p>
               <div className="social">
                 <a
                   href="https://example.com"

@@ -1,10 +1,8 @@
 import React, { useCallback } from "react";
-import Carousel from "nuka-carousel";
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import EmblaCarousel from "../embla-carousel";
 import { useRouter } from "next/router";
 import { handleNavigation } from "@/utils/utils";
-import Image from "next/image";
 
 const About = () => {
   const router = useRouter();
@@ -33,7 +31,7 @@ const About = () => {
       <div className="wrapper top">
         <p className="underscored">О компании</p>
         <div className="head">
-          <p>БЕРКАНАБИО©</p>
+          <p>БЕРКАНА БИО©</p>
           <span>&mdash;</span>
         </div>
         <div className="text">
@@ -116,7 +114,7 @@ const About = () => {
                 </div>
                 <div className="image">
                   <img src="/corn-modified.png" alt="" />
-                  <img src="/syngenta.png" alt="logo" />
+
                 </div>
               </div>
             </div>
@@ -147,7 +145,7 @@ const About = () => {
                 </div>
                 <div className="image">
                   <img src="/corn-modified.png" alt="" />
-                  <img src="/syngenta.png" alt="logo" />
+
                 </div>
               </div>
             </div>
@@ -178,7 +176,7 @@ const About = () => {
                 </div>
                 <div className="image">
                   <img src="/corn-modified.png" alt="" />
-                  <img src="/syngenta.png" alt="logo" />
+
                 </div>
               </div>
             </div>
@@ -235,7 +233,7 @@ const About = () => {
             <span className="dot" />
             <span className="dot" />
           </div>
-          <img src="/syngenta.png" alt="logo" />
+
         </div>
       </div>
     </div>

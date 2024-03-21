@@ -280,7 +280,7 @@ const DataDisplaySeeds: React.FC = () => {
         case "powercell":
           return "Powercell";
         default:
-          return "no type";
+          return "";
       }
     };
 

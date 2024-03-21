@@ -3,11 +3,10 @@ import Layout from "@/components/general/layout";
 import Head from "next/head";
 import HeadNav from "@/components/general/head-nav";
 import "ol/ol.css";
-import { Feature, Map, Overlay, View } from "ol";
+import { Feature, Map, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
 import { fromLonLat } from "ol/proj";
-import { MapOptions } from "ol/Map";
 import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
 import { Icon, Style } from "ol/style";
@@ -18,13 +17,13 @@ const Contacts: React.FC = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
 
   const locations: { name: string; coords: [number, number] }[] = [
-    { name: "Voronezh", coords: [39.214768, 51.678035] },
-    // Add more locations here
+    { name: "Voronezh", coords: [39.2144, 51.678135] },
+
   ];
 
   useEffect(() => {
     if (!mapRef.current) {
-      const voronezhCoords = fromLonLat([39.214768, 51.678035]);
+      const voronezhCoords = fromLonLat(locations[0].coords);
 
       const map = new Map({
         target: mapContainerRef.current!,
@@ -56,7 +55,7 @@ const Contacts: React.FC = () => {
 
       map.addLayer(pinLayer);
 
-      mapRef.current = map; // Assign the map instance to the ref
+      mapRef.current = map;
     }
   }, []);
 
@@ -67,7 +66,7 @@ const Contacts: React.FC = () => {
       view.setCenter(fromLonLat(coords));
       view.setZoom(17);
       mapContainerRef.current?.scrollIntoView({
-        behavior: "smooth", // You can adjust the scrolling behavior as needed
+        behavior: "smooth", // "auto" | "smooth" | "instant"
       });
     }
   };
@@ -305,26 +304,6 @@ const Contacts: React.FC = () => {
                   <p>8 (903) 853-88-20</p>
                 </div>
               </div>
-              <div className="table-row">
-                <div>
-                  <p>Комбаров Геннадий Федорович</p>
-                </div>
-                <div>
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.81556 6.05889C3.93556 8.26 5.74 10.0567 7.94111 11.1844L9.65222 9.47333C9.86222 9.26333 10.1733 9.19333 10.4456 9.28667C11.3167 9.57444 12.2578 9.73 13.2222 9.73C13.65 9.73 14 10.08 14 10.5078V13.2222C14 13.65 13.65 14 13.2222 14C5.91889 14 0 8.08111 0 0.777778C0 0.35 0.35 0 0.777778 0H3.5C3.92778 0 4.27778 0.35 4.27778 0.777778C4.27778 1.75 4.43333 2.68333 4.72111 3.55444C4.80667 3.82667 4.74444 4.13 4.52667 4.34778L2.81556 6.05889Z"
-                      fill="#D4A95A"
-                    />
-                  </svg>
-                  <p>8 (903) 853-88-20</p>
-                </div>
-              </div>
             </div>
             <div className="table">
               <div className="table-head">
@@ -385,7 +364,7 @@ const Contacts: React.FC = () => {
               </div>
               <div className="table-row">
                 <div>
-                  <p>Милосердов Вадим Михайлович</p>
+                  <p>Доценко Владимир Владимирович</p>
                 </div>
                 <div>
                   <svg
@@ -400,29 +379,10 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p>?????</p>
                 </div>
               </div>
-              <div className="table-row">
-                <div>
-                  <p>Егоров Юрий Александрович</p>
-                </div>
-                <div>
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.81556 6.05889C3.93556 8.26 5.74 10.0567 7.94111 11.1844L9.65222 9.47333C9.86222 9.26333 10.1733 9.19333 10.4456 9.28667C11.3167 9.57444 12.2578 9.73 13.2222 9.73C13.65 9.73 14 10.08 14 10.5078V13.2222C14 13.65 13.65 14 13.2222 14C5.91889 14 0 8.08111 0 0.777778C0 0.35 0.35 0 0.777778 0H3.5C3.92778 0 4.27778 0.35 4.27778 0.777778C4.27778 1.75 4.43333 2.68333 4.72111 3.55444C4.80667 3.82667 4.74444 4.13 4.52667 4.34778L2.81556 6.05889Z"
-                      fill="#D4A95A"
-                    />
-                  </svg>
-                  <p>8 (903) 853-88-20</p>
-                </div>
-              </div>
+
             </div>
             <div className="table">
               <div className="table-head">
