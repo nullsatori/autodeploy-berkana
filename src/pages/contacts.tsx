@@ -18,7 +18,6 @@ const Contacts: React.FC = () => {
 
   const locations: { name: string; coords: [number, number] }[] = [
     { name: "Voronezh", coords: [39.2144, 51.678135] },
-
   ];
 
   useEffect(() => {
@@ -382,7 +381,6 @@ const Contacts: React.FC = () => {
                   <p>?????</p>
                 </div>
               </div>
-
             </div>
             <div className="table">
               <div className="table-head">

@@ -4,10 +4,9 @@ import Layout from "@/components/general/layout";
 import HeadNav from "../components/general/head-nav";
 import PartnersBlock from "@/components/index-page/partners-block";
 
-import '@splidejs/react-splide/css';
+import "@splidejs/react-splide/css";
 
 const Partners = () => {
-
   return (
     <>
       <Head>

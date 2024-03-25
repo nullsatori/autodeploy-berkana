@@ -3,8 +3,8 @@ import Layout from "@/components/general/layout";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Loader from "@/components/general/loader";
-import {Options, Splide, SplideSlide} from "@splidejs/react-splide";
-import '@splidejs/react-splide/css';
+import { Options, Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 const Services = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -80,33 +80,31 @@ const Services = () => {
   const desktopOptions: Options = {
     perPage: 1,
     perMove: 1,
-    focus: 'center',
+    focus: "center",
     pagination: true,
-    paginationDirection: 'ltr',
-    direction: 'ltr',
+    paginationDirection: "ltr",
+    direction: "ltr",
     arrows: false,
-    height: '100vh',
+    height: "100vh",
     speed: 750,
     flickPower: 200,
-
   };
 
   // Define options for mobile
   const mobileOptions: Options = {
     perPage: 1,
     perMove: 1,
-    focus: 'center',
+    focus: "center",
     pagination: true,
-    paginationDirection: 'ltr',
-    direction: 'ltr',
+    paginationDirection: "ltr",
+    direction: "ltr",
     arrows: false,
-    height: '100vh',
+    height: "100vh",
     dragMinThreshold: 10,
     // Add or adjust mobile-specific options here
   };
   const safeOuterWidth = outerWidth || 0;
   const options = safeOuterWidth > 769 ? desktopOptions : mobileOptions;
-
 
   return (
     <>
@@ -118,7 +116,7 @@ const Services = () => {
         <link rel="preload" href="/logo.png" as="image" />
       </Head>
       <Layout logo={"white"}>
-        <Splide options={options} className='secondary-carousel'>
+        <Splide options={options} className="secondary-carousel">
           {slideImages.map((image, index) => (
             <SplideSlide key={index}>
               <div
@@ -127,9 +125,7 @@ const Services = () => {
                   background: `no-repeat center/100% url(${image})`,
                 }}
               >
-                <div className="wrapper">
-                  {slideText[index]}
-                </div>
+                <div className="wrapper">{slideText[index]}</div>
               </div>
             </SplideSlide>
           ))}

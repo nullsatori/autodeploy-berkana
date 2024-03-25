@@ -3,8 +3,8 @@ import { useWindowSize } from "rooks";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Loader from "@/components/general/loader";
-import {Options, Splide, SplideSlide} from "@splidejs/react-splide";
-import '@splidejs/react-splide/css';
+import { Options, Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
 
 const BackgroundSlider = () => {
   const [loading, setLoading] = useState(true);
@@ -26,46 +26,49 @@ const BackgroundSlider = () => {
   //   dragMinThreshold?: number; // Optional property
   // };
 
-// Define options for desktop
+  // Define options for desktop
   const desktopOptions: Options = {
     perPage: 1,
     perMove: 1,
-    focus: 'center',
+    focus: "center",
     pagination: true,
-    paginationDirection: 'ttb',
-    direction: 'ttb',
+    paginationDirection: "ttb",
+    direction: "ttb",
     arrows: false,
-    height: '100vh',
+    height: "100vh",
     speed: 750, // Ensure speed is a number
     flickPower: 200,
   };
 
-// Define options for mobile
+  // Define options for mobile
   const mobileOptions: Options = {
     perPage: 1,
     perMove: 1,
-    focus: 'center',
+    focus: "center",
     pagination: true,
-    paginationDirection: 'ltr',
-    direction: 'ltr',
+    paginationDirection: "ltr",
+    direction: "ltr",
     arrows: false,
-    height: '100vh',
-    dragMinThreshold: 10 // Optional property
+    height: "100vh",
+    dragMinThreshold: 10, // Optional property
   };
 
   const options = safeOuterWidth > 769 ? desktopOptions : mobileOptions;
 
-  const slideImages = safeOuterWidth > 769 ? [
-    "/first-slide.webp",
-    "/second-slide.webp",
-    "/third-slide.webp",
-    "/fourth-slide.webp",
-  ] : [
-    "/first-slide-mobile.webp",
-    "/second-slide-mobile.webp",
-    "/third-slide-mobile.webp",
-    "/fourth-slide-mobile.webp",
-  ];
+  const slideImages =
+    safeOuterWidth > 769
+      ? [
+          "/first-slide.webp",
+          "/second-slide.webp",
+          "/third-slide.webp",
+          "/fourth-slide.webp",
+        ]
+      : [
+          "/first-slide-mobile.webp",
+          "/second-slide-mobile.webp",
+          "/third-slide-mobile.webp",
+          "/fourth-slide-mobile.webp",
+        ];
   const slideText = [
     <motion.div
       initial={{ opacity: 0, x: "-100%" }}
@@ -149,9 +152,7 @@ const BackgroundSlider = () => {
               background: `no-repeat center/100% url(${image})`,
             }}
           >
-            <div className="wrapper">
-              {slideText[index]}
-            </div>
+            <div className="wrapper">{slideText[index]}</div>
             <div className="slider-footer">
               <p className="copyright">© 2012–2024 «Беркана»</p>
               <div className="temp">

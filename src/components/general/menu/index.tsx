@@ -47,7 +47,11 @@ const Menu: React.FC<MenuProps> = ({ menuActive, setMenuActive }) => {
         >
           <div className="wrapper">
             <div className="head">
-              <img src="/logo.png" alt="logo" onClick={() => handleMenuItemClick('/')}/>
+              <img
+                src="/logo.png"
+                alt="logo"
+                onClick={() => handleMenuItemClick("/")}
+              />
               <svg
                 width="68"
                 height="68"
@@ -77,14 +81,18 @@ const Menu: React.FC<MenuProps> = ({ menuActive, setMenuActive }) => {
 
             <div className="left">
               <div>
-                <p onClick={() => handleMenuItemClick("/wip")}>Средства защиты</p>
+                <p onClick={() => handleMenuItemClick("/wip")}>
+                  Средства защиты
+                </p>
                 <p onClick={() => handleMenuItemClick("/seeds")}>Семена</p>
                 <p onClick={() => handleMenuItemClick("/services")}>Услуги</p>
                 <p onClick={() => handleMenuItemClick("/wip")}>События</p>
               </div>
               <div>
                 <p onClick={() => handleMenuItemClick("/about")}>О компании</p>
-                <p onClick={() => handleMenuItemClick("/partners")}>Наши партнёры</p>
+                <p onClick={() => handleMenuItemClick("/partners")}>
+                  Наши партнёры
+                </p>
                 <p onClick={() => handleMenuItemClick("/contacts")}>Контакты</p>
               </div>
             </div>
@@ -133,7 +141,6 @@ const Menu: React.FC<MenuProps> = ({ menuActive, setMenuActive }) => {
             </div>
             <div className="foot">
               <p>© 2012–2024 «Беркана»</p>
-
             </div>
           </div>
         </motion.div>

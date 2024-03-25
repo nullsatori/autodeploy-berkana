@@ -12,7 +12,6 @@ const WIP = () => {
       <p className="wip-back" onClick={handleGoBack}>
         ← назад
       </p>
-
     </div>
   );
 };
