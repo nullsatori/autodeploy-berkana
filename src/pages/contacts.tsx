@@ -72,7 +72,7 @@ const Contacts: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Контакты - Berkana</title>
+        <title>Беркана - Контакты</title>
         <meta name="description" content="Контакты Berkana" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

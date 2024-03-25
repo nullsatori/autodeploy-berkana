@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>О компании - Berkana</title>
+        <title>Беркана - О компании</title>
         <meta name="description" content="Информация о компании Berkana" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

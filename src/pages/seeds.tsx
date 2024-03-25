@@ -12,7 +12,7 @@ export default function Seeds() {
   return (
     <>
       <Head>
-        <title>Семена - Berkana</title>
+        <title>Беркана - Семена</title>
         <meta name="description" content="Каталог семян Berkana" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

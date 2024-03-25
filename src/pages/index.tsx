@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Berkana</title>
+        <title>Беркана</title>
         <meta name="description" content="Главная Berkana" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
