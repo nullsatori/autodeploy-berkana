@@ -28,7 +28,7 @@ export default function Maintenance() {
         <div className="maintenance-content">
             <h1>Сайт в разработке</h1>
             <p>Пожалуйста, свяжитесь с нами по следующим контактам:</p>
-            <p>Email: berkanabio@gmail.com</p>
+            <p>Email: inbox@berkana-bio.ru</p>
           
           <div className="info">
             <div className="info-head">
