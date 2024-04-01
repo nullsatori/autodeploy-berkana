@@ -20,10 +20,10 @@ const Contacts: React.FC = () => {
     { name: "Voronezh", coords: [39.2144, 51.678135] },
   ];
 
-  useEffect(() => {
+ useEffect(() => {
     if (!mapRef.current) {
       const voronezhCoords = fromLonLat(locations[0].coords);
-
+      
       const map = new Map({
         target: mapContainerRef.current!,
         layers: [new TileLayer({ source: new OSM() })],
@@ -97,14 +97,14 @@ const Contacts: React.FC = () => {
                   <h3>Сафонов Артем Владимирович</h3>
                   <p>Управляющий</p>
                 </div>
-                <h3>8 (473) 300-39-14</h3>
+                <h3>+7 (920) 465-59-49</h3>
               </div>
               <div className="block">
                 <div>
                   <h3>Подобряев Андрей Юрьевич</h3>
                   <p>Заместитель</p>
                 </div>
-                <h3>8 (473) 300-39-14</h3>
+                <h3>+7 (919) 181-09-51</h3>
               </div>
             </div>
             <div className="table">
@@ -145,7 +145,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p>+7 (903) 853-88-20</p>
                 </div>
               </div>
               <div className="table-row">
@@ -165,7 +165,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p> +7 (951) 565-18-58</p>
                 </div>
               </div>
               <div className="table-row">
@@ -185,7 +185,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p> +7 (909) 769-08-49</p>
                 </div>
               </div>
               <div className="table-row">
@@ -205,7 +205,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p>+7 (915) 585-66-08</p>
                 </div>
               </div>
             </div>
@@ -244,7 +244,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (910) 351-36-31</p>
+                  <p>+7 (910) 351-36-31</p>
                 </div>
               </div>
             </div>
@@ -283,7 +283,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p>+7 (920) 238-19-18</p>
                 </div>
               </div>
               <div className="table-row">
@@ -303,7 +303,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p>+7 (915) 888-60-68</p>
                 </div>
               </div>
             </div>
@@ -342,7 +342,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p>+7 (903) 853-88-20</p>
                 </div>
               </div>
             </div>
@@ -381,7 +381,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>?????</p>
+                  <p>+7 (952) 424-91-39</p>
                 </div>
               </div>
             </div>
@@ -420,7 +420,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>8 (903) 853-88-20</p>
+                  <p>+7 (910) 351-36-31</p>
                 </div>
               </div>
             </div>
