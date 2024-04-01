@@ -82,7 +82,22 @@ const Contacts: React.FC = () => {
         {/* <HeadNav pageName={"контакты"} subPageFlag={true} style="blue" /> */}
         <div className="contacts">
           <div className="contacts-head">
+            <img src="/logo.jpg" alt="" />
             <h1>Сайт находится в разработке</h1>
+            <div>
+              <p className="contacts-head-text">
+                ООО "Беркана Био" 
+                <br />
+                ИНН 3666225274
+                <br />
+                394036, Воронежская область, г Воронеж, пр-кт Революции, д. 9а, офис 1
+                <br />
+
+              </p>
+              <a href="mailto:inbox@berkana-bio.ru">inbox@berkana-bio.ru</a>
+              
+            </div>
+            
           </div>
           <div
             id="map"
@@ -95,7 +110,7 @@ const Contacts: React.FC = () => {
               <div className="block">
                 <div>
                   <h3>Сафонов Артем Владимирович</h3>
-                  <p>Управляющий</p>
+                  <p>Управляющий ИП</p>
                 </div>
                 <h3>+7 (920) 465-59-49</h3>
               </div>
@@ -405,7 +420,7 @@ const Contacts: React.FC = () => {
               </div>
               <div className="table-row">
                 <div>
-                  <p>Казанцев Сергей Николаевич</p>
+                  <p>Пронин Александр</p>
                 </div>
                 <div>
                   <svg
@@ -420,7 +435,7 @@ const Contacts: React.FC = () => {
                       fill="#D4A95A"
                     />
                   </svg>
-                  <p>+7 (910) 351-36-31</p>
+                  <p>+7 (919) 185-84-47</p>
                 </div>
               </div>
             </div>

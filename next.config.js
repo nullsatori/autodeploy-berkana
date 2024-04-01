@@ -17,7 +17,7 @@ const nextConfig = {
   async redirects() {
      return [
        {
-         source: "/((?!contacts|pin\\.png).*)",
+         source: "/((?!contacts|pin\\.png|logo\\.jpg).*)",
          destination: "/contacts",
          permanent: false,
        },
