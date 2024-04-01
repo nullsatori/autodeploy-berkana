@@ -18,7 +18,7 @@ import "@/styles/szr/table.scss";
 import "@/styles/szr/szr.scss";
 import "@/styles/generic-pages/pages.scss";
 import "@/styles/about/about.scss";
-
+import "@/styles/maintenance.scss";
 import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
