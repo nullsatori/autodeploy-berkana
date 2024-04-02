@@ -14,16 +14,6 @@ const nextConfig = {
  
      return config;
   },
-  async redirects() {
-     return [
-       {
-         source: "/((?!contacts|pin\\.png).*)",
-         destination: "/contacts",
-         permanent: false,
-       },
-      
-     ];
-  },
  };
  
  module.exports = nextConfig;
