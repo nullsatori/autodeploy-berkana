@@ -83,11 +83,11 @@ const Header: React.FC<HeaderProps> = ({ setMenuActive, logo }) => {
         >
           +7 437 300 39 14
         </p>
-        <div className={styles.menu}>
+        <div className={styles.menu}
+             onClick={() => setMenuActive(true)}>
           <img
             src={`/${getMenuPath(logo)}`}
             alt="menu"
-            onClick={() => setMenuActive(true)}
           />
         </div>
 
