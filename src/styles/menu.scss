@@ -266,7 +266,6 @@
         display: flex;
         padding-bottom: 20px;
         width: 90%;
-        display: flex;
         justify-content: space-between;
         .social {
           svg {
@@ -450,7 +449,7 @@
   .head {
     img {
       position: absolute;
-      margin-left: 2vw;
+        margin-left: 2vw;
       margin-top: 4vh;
     }
     svg {

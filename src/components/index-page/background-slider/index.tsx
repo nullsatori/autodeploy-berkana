@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useWindowSize } from "rooks";
 import { motion } from "framer-motion";
-import { useRouter } from "next/router";
 import Loader from "@/components/general/loader";
 import { Options, Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -138,7 +137,6 @@ const BackgroundSlider = () => {
     }
   }, [outerWidth]);
 
-  const router = useRouter();
 
   return loading ? (
     <Loader loading={loading} />
@@ -153,24 +151,6 @@ const BackgroundSlider = () => {
             }}
           >
             <div className="wrapper">{slideText[index]}</div>
-            <div className="slider-footer">
-              <p className="copyright">© 2012–2024 «Беркана»</p>
-              <div className="temp">
-                <p onClick={() => router.push("/about")}>О компании</p>
-                <p onClick={() => router.push("/partners")}>Партнёры</p>
-                <p onClick={() => router.push("/contacts")}>Контакты</p>
-              </div>
-              <div className="info">
-                <p>
-                  Поддержка сайта
-                  <span>maxpryadkin.ru</span>
-                </p>
-                <p>
-                  Дизайн
-                  <span>Никита Рыжков</span>
-                </p>
-              </div>
-            </div>
           </div>
         </SplideSlide>
       ))}
