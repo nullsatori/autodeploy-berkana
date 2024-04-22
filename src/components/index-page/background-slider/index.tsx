@@ -35,8 +35,9 @@ const BackgroundSlider = () => {
     direction: "ttb",
     arrows: false,
     height: "100vh",
-    speed: 750, // Ensure speed is a number
+    speed: 750,
     flickPower: 200,
+    autoplay: true,
   };
 
   // Define options for mobile
@@ -49,7 +50,8 @@ const BackgroundSlider = () => {
     direction: "ltr",
     arrows: false,
     height: "100vh",
-    dragMinThreshold: 10, // Optional property
+    dragMinThreshold: 10,
+    autoplay: true,
   };
 
   const options = safeOuterWidth > 769 ? desktopOptions : mobileOptions;

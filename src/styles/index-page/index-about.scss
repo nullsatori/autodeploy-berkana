@@ -17,11 +17,11 @@
     width: fit-content;
     position: relative;
     bottom: 50%;
-    z-index: 9999;
+    z-index: 2;
   }
   .embla__next {
     left: 77%;
-    z-index: 9999;
+    z-index: 2;
   }
 
   @media screen and (width <= 300px) {

@@ -65,33 +65,36 @@ const Header: React.FC<HeaderProps> = ({ setMenuActive, logo }) => {
   );
 
   return (
-    <div className={styles.header}>
-      <Link href="/">
-        <img src={`/${getLogoPath(logo)}`} alt="logo" className={styles.logo} />
-      </Link>
-      <div className={styles.wrapper}>
-        <div className={styles.temp}>
-          {renderNavLink("СЗР", "/wip")}
-          {renderNavLink("Семена", "/seeds")}
-          {renderNavLink("Услуги", "/services")}
-        </div>
-        {renderProjectLink()}
-        <p
-          className={`${styles["header-text"]} ${styles.phone} ${
-            styles[`${logo}-links`]
-          }`}
-        >
-          +7 437 300 39 14
-        </p>
-        <div className={styles.menu}
-             onClick={() => setMenuActive(true)}>
-          <img
-            src={`/${getMenuPath(logo)}`}
-            alt="menu"
-          />
-        </div>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <Link href="/">
+          <img src={`/${getLogoPath(logo)}`} alt="logo" className={styles.logo} />
+        </Link>
+        <div className={styles.wrapper}>
+          <div className={styles.temp}>
+            {renderNavLink("СЗР", "/wip")}
+            {renderNavLink("Семена", "/seeds")}
+            {renderNavLink("Услуги", "/services")}
+          </div>
+          {renderProjectLink()}
+          <p
+            className={`${styles["header-text"]} ${styles.phone} ${
+              styles[`${logo}-links`]
+            }`}
+          >
+            +7 437 300 39 14
+          </p>
+          <div className={styles.menu}
+               onClick={() => setMenuActive(true)}>
+            <img
+              src={`/${getMenuPath(logo)}`}
+              alt="menu"
+            />
+          </div>
 
+        </div>
       </div>
+
     </div>
   );
 };
