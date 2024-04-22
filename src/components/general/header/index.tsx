@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "@/styles/Header.module.scss";
@@ -36,6 +36,17 @@ const Header: React.FC<HeaderProps> = ({ setMenuActive, logo }) => {
   const isActiveLink = (href: string): boolean => {
     return router.pathname === href;
   };
+  const [offset, setOffset] = React.useState(0);
+  const setScroll = () => {
+    setOffset(window.scrollY);
+    console.log(offset)
+  };
+  useEffect(() => {
+    document.addEventListener("scroll", setScroll);
+    return () => {
+      document.removeEventListener("scroll", setScroll);
+    };
+  }, []);
 
   const renderNavLink = (
     text: string,
@@ -65,7 +76,9 @@ const Header: React.FC<HeaderProps> = ({ setMenuActive, logo }) => {
   );
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles["container"]} ${styles.project} ${
+      styles[`container-${logo}`]
+    }`}>
       <div className={styles.header}>
         <Link href="/">
           <img src={`/${getLogoPath(logo)}`} alt="logo" className={styles.logo} />

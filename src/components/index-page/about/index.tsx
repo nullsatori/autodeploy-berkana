@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
-import EmblaCarousel from "../embla-carousel";
+import SeedsCarousel from "../seeds-carousel";
 import { useRouter } from "next/router";
 import { handleNavigation } from "@/utils/utils";
 
@@ -43,7 +43,7 @@ const About = () => {
         </div>
       </div>
       <div className="wrapper middle">
-        <EmblaCarousel
+        <SeedsCarousel
           slides={SLIDES}
           options={OPTIONS}
           scrollPrev={scrollPrev}

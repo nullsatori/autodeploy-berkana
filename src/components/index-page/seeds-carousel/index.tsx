@@ -7,7 +7,7 @@ type PropType = {
   scrollPrev: any;
 };
 
-const EmblaCarousel: React.FC<PropType> = (props: any) => {
+const SeedsCarousel: React.FC<PropType> = (props: any) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const slideText = ["Партнеры"];
@@ -54,4 +54,4 @@ const EmblaCarousel: React.FC<PropType> = (props: any) => {
   );
 };
 
-export default EmblaCarousel;
+export default SeedsCarousel;
