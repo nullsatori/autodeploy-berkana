@@ -291,11 +291,11 @@ const About = () => {
             </div>
             <div className="controls">
               <div className="buttons">
-                <span className="dot active" onClick={() => emblaApi.scrollTo(0)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(1)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(2)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(3)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(4)}/>
+                <span className="dot active" onClick={() => { if (emblaApi) emblaApi.scrollTo(0)}}/>
+                <span className="dot" onClick={() => { if (emblaApi) emblaApi.scrollTo(1)}}/>
+                <span className="dot" onClick={() => { if (emblaApi) emblaApi.scrollTo(2)}}/>
+                <span className="dot" onClick={() => { if (emblaApi) emblaApi.scrollTo(3)}}/>
+                <span className="dot" onClick={() => { if (emblaApi) emblaApi.scrollTo(4)}}/>
               </div>
             </div>
           </div>
@@ -316,11 +316,21 @@ const About = () => {
             </div>
             <div className="controls">
               <div className="buttons">
-                <span className="dot" onClick={() => emblaApi.scrollTo(0)}/>
-                <span className="dot active" onClick={() => emblaApi.scrollTo(1)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(2)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(3)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(4)}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(0)
+                }}/>
+                <span className="dot active" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(1)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(2)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(3)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(4)
+                }}/>
               </div>
             </div>
           </div>
@@ -334,7 +344,7 @@ const About = () => {
             <div className="info">
               <h1>Сорго</h1>
               <p>
-              Уникальная культура, выращиваемая в более чем 25
+                Уникальная культура, выращиваемая в более чем 25
                 странах, представляющая собой злак с разнообразием форм и
                 сортов, что делает его применение в сельском хозяйстве
                 разнообразным.
@@ -342,11 +352,21 @@ const About = () => {
             </div>
             <div className="controls">
               <div className="buttons">
-                <span className="dot" onClick={() => emblaApi.scrollTo(0)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(1)}/>
-                <span className="dot active" onClick={() => emblaApi.scrollTo(2)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(3)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(4)}/>
+                <span className="dot " onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(0)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(1)
+                }}/>
+                <span className="dot active" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(2)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(3)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(4)
+                }}/>
               </div>
             </div>
           </div>
@@ -369,11 +389,21 @@ const About = () => {
             </div>
             <div className="controls">
               <div className="buttons">
-                <span className="dot" onClick={() => emblaApi.scrollTo(0)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(1)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(2)}/>
-                <span className="dot active" onClick={() => emblaApi.scrollTo(3)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(4)}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(0)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(1)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(2)
+                }}/>
+                <span className="dot active" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(3)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(4)
+                }}/>
               </div>
             </div>
           </div>
@@ -396,11 +426,21 @@ const About = () => {
             </div>
             <div className="controls">
               <div className="buttons">
-                <span className="dot" onClick={() => emblaApi.scrollTo(0)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(1)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(2)}/>
-                <span className="dot" onClick={() => emblaApi.scrollTo(3)}/>
-                <span className="dot active" onClick={() => emblaApi.scrollTo(4)}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(0)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(1)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(2)
+                }}/>
+                <span className="dot" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(3)
+                }}/>
+                <span className="dot active" onClick={() => {
+                  if (emblaApi) emblaApi.scrollTo(4)
+                }}/>
               </div>
             </div>
           </div>
