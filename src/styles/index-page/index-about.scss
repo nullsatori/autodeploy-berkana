@@ -9,6 +9,10 @@
   }
   .embla__slide {
     min-width: 100%;
+
+  }
+  .mobile-slide.embla__slide{
+
   }
   .embla__next,
   .embla__prev {
@@ -176,6 +180,7 @@
       margin: 0 auto;
     }
     .mobile-seeds {
+
       .info {
         width: 70vw;
       }
@@ -211,10 +216,13 @@
     }
 
     .mobile-seeds {
-      background: white;
-      width: 90vw;
 
       margin: 10vh auto 0 auto;
+      .mobile-slide{
+        width: 90vw;
+        background: white;
+        margin: 0 2rem;
+      }
       .head {
         height: 30vh;
       }
@@ -243,7 +251,7 @@
 
       .info,
       .controls {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         img {
           height: 25px;
