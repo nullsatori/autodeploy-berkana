@@ -31,18 +31,22 @@ const PartnersBlock = () => {
 
   return (
     <div className="partners">
-      {partners.map((partner, index) => (
-        <Link
-          key={index}
-          href={partner.link}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div className={`partner ${partner.name}`} key={index}>
-            <img src={partner.logo} alt="logo" />
-          </div>
-        </Link>
-      ))}
+
+      <div className="partners-container">
+        {partners.map((partner, index) => (
+          <Link
+            key={index}
+            href={partner.link}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div className={`partner ${partner.name}`} key={index}>
+              <img src={partner.logo} alt="logo" />
+            </div>
+          </Link>
+        ))}
+      </div>
+
     </div>
   );
 };

@@ -2,6 +2,7 @@
   background: #185f65;
   color: #d4a95a;
   display: flex;
+  justify-content: center;
   .playback-btn {
     position: relative;
     left: 0;
@@ -18,6 +19,7 @@
   @media screen and (width > 768px) {
     align-items: center;
     max-height: fit-content;
+
     .wrapper {
       height: fit-content;
       margin-left: 5%;
@@ -25,6 +27,8 @@
     .embla-desktop {
       display: flex;
       flex-direction: column;
+      width: 85vw;
+      margin: 0 auto;
       .embla__container {
         margin-right: 35%;
         .embla__slide {
@@ -79,7 +83,7 @@
       margin: 0 0 25px 0;
     }
     .wrapper {
-      width: 80vw;
+      width: 90vw;
       justify-content: center;
       margin: 0 auto;
     }
@@ -128,7 +132,7 @@
       margin: 0 0 25px 0;
     }
     .wrapper {
-      width: 80vw;
+      width: 90vw;
       justify-content: center;
       margin: 0 auto;
     }
@@ -223,7 +227,7 @@
   @media screen and (width < 1367px) {
     .wrapper {
       flex-direction: column;
-      width: 80vw;
+      width: 90vw;
 
       .title {
         width: fit-content;

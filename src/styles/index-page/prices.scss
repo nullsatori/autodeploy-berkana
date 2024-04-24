@@ -31,9 +31,19 @@
     }
     .downloads {
       .card {
-        p {
-          width: 22%;
+        &:nth-child(1){
+          p{
+
+          }
+
+
         }
+        &:nth-child(2){
+          p{
+
+          }
+        }
+
       }
     }
   }
@@ -57,6 +67,7 @@
           top: 40%;
           left: 60%;
           text-align: end;
+
         }
       }
     }
@@ -101,15 +112,27 @@
     .downloads {
       .card {
         width: 50vw;
+        &:nth-child(1){
+          p{
+            width: 21%;
+          }
 
+
+        }
+        &:nth-child(2){
+          p{
+
+          }
+        }
         svg {
           position: relative;
           bottom: 20px;
         }
         p {
+
           width: fit-content;
           top: 40%;
-          left: 54%;
+          left: 65%;
         }
       }
     }
@@ -125,6 +148,7 @@
         }
         p {
           align-self: end;
+          max-width: 50%;
         }
         width: 33.3vw;
       }
@@ -134,7 +158,7 @@
     display: flex;
     .item {
       display: flex;
-      height: 32.4vh;
+      height: 20vh;
       border: 1px solid #e4e4e4;
       border-bottom: 1px solid #fefefe;
       h1,
@@ -158,7 +182,7 @@
     display: flex;
 
     .card {
-      height: 40vh;
+      height: 20vh;
 
       display: flex;
       flex-direction: column;
@@ -170,12 +194,13 @@
       p {
         position: relative;
         font-weight: 800;
-        font-size: 22px;
+        font-size: 1.5rem;
         line-height: 90%;
         letter-spacing: -0.055em;
         text-transform: uppercase;
+        text-align: end;
       }
-      &:nth-child(1) {
+      &:nth-child(2) {
         color: #185f65;
         background: #d4a95a;
       }
