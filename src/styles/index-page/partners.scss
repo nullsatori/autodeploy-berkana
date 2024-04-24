@@ -1,19 +1,16 @@
 .partners{
-    background: #f6f6f6;
-    color: #185f65;
-
-    h2{
-      width: 85vw;
-      padding-top: 1.6rem;
-      margin: 0 auto;
-    }
+  width: 95vw;
+  margin: 1rem auto;
 }
 .partners-container {
   background: #f6f6f6;
+  color: #185f65;
   display: grid;
   justify-content: start;
   overflow: scroll;
   padding: 2rem 0;
+
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -25,6 +22,7 @@
   }
   @media screen and (max-width: 1100px) {
     grid-template-columns: repeat(8, 1fr);
+    margin-bottom: 5rem;
     .partner {
       padding: 0 1.5rem;
       img{
