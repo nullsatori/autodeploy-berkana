@@ -73,9 +73,7 @@ const Footer: React.FC = () => {
                 </span>
               </Link>
             </div>
-            <div className="bottom">
-              <p>© 2012–2024 «Беркана»</p>
-            </div>
+
           </div>
         </div>
         <div className="right">
@@ -94,14 +92,7 @@ const Footer: React.FC = () => {
               <input type="submit" value="→" />
             </form>
 
-            <div className="bottom">
-              <p>
-                Поддержка сайта <u>maxpryadkin.ru</u>
-              </p>
-              <p>
-                Дизайн <u>Никита Рыжков</u>
-              </p>
-            </div>
+
           </div>
         </div>
       </div>
