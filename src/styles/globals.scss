@@ -22,7 +22,10 @@ $large-screen: 1366px;
     @content;
   }
 }
-
+.embla__next,
+.embla__prev{
+  cursor: pointer;
+}
 .main-carousel {
   .splide__pagination--ltr {
     bottom: 40px;
