@@ -45,7 +45,7 @@ const HeadNav: React.FC<HeadNavProps> = ({
         <div className="nav">{renderNavText()}</div>
         <div className="wrapper">
           <div className="left" onClick={handleGoBack}>
-            <div style={{ display: "inline-flex", alignItems: "center" }}>
+            <div style={{ display: "inline-flex", alignItems: "center", cursor: "pointer" }}>
               <svg
                 width="114"
                 height="8"

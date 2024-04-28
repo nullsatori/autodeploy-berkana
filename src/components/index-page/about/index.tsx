@@ -9,7 +9,7 @@ const About = () => {
       <div className="wrapper top">
         <p className="underscored">О компании</p>
         <div className="head">
-          <p>БЕРКАНА БИО©</p>
+          <p>БЕРКАНА БИО</p>
           <span>&mdash;</span>
         </div>
         <div className="text">
