@@ -6,8 +6,6 @@ import Prices from "@/components/index-page/prices";
 import AgroVideo from "@/components/index-page/agro-video";
 import Layout from "@/components/general/layout";
 
-
-
 export default function Home() {
   // const scrolltoHash = function (element_id: string) {
   //   const element = document.getElementById(element_id);

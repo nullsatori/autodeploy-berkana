@@ -449,13 +449,14 @@
   .head {
     img {
       position: absolute;
-        margin-left: 2vw;
+      margin-left: 2vw;
       margin-top: 4vh;
     }
     svg {
       position: absolute;
       right: 2vw;
       margin-top: 4vh;
+      cursor: pointer;
     }
   }
   .left {
@@ -471,6 +472,7 @@
       line-height: 190%;
       letter-spacing: -0.03em;
       width: fit-content;
+      cursor: pointer;
     }
   }
   .right {

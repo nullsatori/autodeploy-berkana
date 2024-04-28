@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "@/styles/Header.module.scss";
@@ -23,7 +23,6 @@ function getMenuPath(logo: "blue" | "yellow" | "white" | undefined): string {
   }
 }
 
-
 interface HeaderProps {
   setMenuActive: (active: boolean) => void;
   logo: "blue" | "yellow" | "white" | undefined;
@@ -39,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({ setMenuActive, logo }) => {
   const [offset, setOffset] = React.useState(0);
   const setScroll = () => {
     setOffset(window.scrollY);
-    console.log(offset)
+    console.log(offset);
   };
   useEffect(() => {
     document.addEventListener("scroll", setScroll);
@@ -76,12 +75,18 @@ const Header: React.FC<HeaderProps> = ({ setMenuActive, logo }) => {
   );
 
   return (
-    <div className={`${styles["container"]} ${styles.project} ${
-      styles[`container-${logo}`]
-    }`}>
+    <div
+      className={`${styles["container"]} ${styles.project} ${
+        styles[`container-${logo}`]
+      }`}
+    >
       <div className={styles.header}>
         <Link href="/">
-          <img src={`/${getLogoPath(logo)}`} alt="logo" className={styles.logo} />
+          <img
+            src={`/${getLogoPath(logo)}`}
+            alt="logo"
+            className={styles.logo}
+          />
         </Link>
         <div className={styles.wrapper}>
           <div className={styles.temp}>
@@ -97,17 +102,11 @@ const Header: React.FC<HeaderProps> = ({ setMenuActive, logo }) => {
           >
             +7 437 300 39 14
           </p>
-          <div className={styles.menu}
-               onClick={() => setMenuActive(true)}>
-            <img
-              src={`/${getMenuPath(logo)}`}
-              alt="menu"
-            />
+          <div className={styles.menu} onClick={() => setMenuActive(true)}>
+            <img src={`/${getMenuPath(logo)}`} alt="menu" />
           </div>
-
         </div>
       </div>
-
     </div>
   );
 };

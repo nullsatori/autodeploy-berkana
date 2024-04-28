@@ -20,10 +20,10 @@ const Contacts: React.FC = () => {
     { name: "Voronezh", coords: [39.2144, 51.678135] },
   ];
 
- useEffect(() => {
+  useEffect(() => {
     if (!mapRef.current) {
       const voronezhCoords = fromLonLat(locations[0].coords);
-      
+
       const map = new Map({
         target: mapContainerRef.current!,
         layers: [new TileLayer({ source: new OSM() })],
@@ -78,8 +78,8 @@ const Contacts: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/logo-yellow.png" as="image" />
       </Head>
-       <Layout logo="yellow">
-         <HeadNav pageName={"контакты"} subPageFlag={true} style="blue" />
+      <Layout logo="yellow">
+        <HeadNav pageName={"контакты"} subPageFlag={true} style="blue" />
         <div className="contacts">
           <div className="contacts-head">
             <h1>Сайт находится в разработке</h1>
@@ -426,7 +426,7 @@ const Contacts: React.FC = () => {
             </div>
           </div>
         </div>
-       </Layout>
+      </Layout>
     </>
   );
 };

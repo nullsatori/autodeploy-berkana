@@ -31,19 +31,14 @@
     }
     .downloads {
       .card {
-        &:nth-child(1){
-          p{
-
-          }
-
-
-        }
-        &:nth-child(2){
-          p{
-
+        &:nth-child(1) {
+          p {
           }
         }
-
+        &:nth-child(2) {
+          p {
+          }
+        }
       }
     }
   }
@@ -67,7 +62,6 @@
           top: 40%;
           left: 60%;
           text-align: end;
-
         }
       }
     }
@@ -112,16 +106,13 @@
     .downloads {
       .card {
         width: 50vw;
-        &:nth-child(1){
-          p{
+        &:nth-child(1) {
+          p {
             width: 21%;
           }
-
-
         }
-        &:nth-child(2){
-          p{
-
+        &:nth-child(2) {
+          p {
           }
         }
         svg {
@@ -129,7 +120,6 @@
           bottom: 20px;
         }
         p {
-
           width: fit-content;
           top: 40%;
           left: 65%;

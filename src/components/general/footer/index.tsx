@@ -73,7 +73,6 @@ const Footer: React.FC = () => {
                 </span>
               </Link>
             </div>
-
           </div>
         </div>
         <div className="right">
@@ -91,8 +90,6 @@ const Footer: React.FC = () => {
               <input type="text" placeholder="Введите ваш e-mail адрес" />
               <input type="submit" value="→" />
             </form>
-
-
           </div>
         </div>
       </div>

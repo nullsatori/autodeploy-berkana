@@ -139,9 +139,6 @@ const Menu: React.FC<MenuProps> = ({ menuActive, setMenuActive }) => {
                 </div>
               </div>
             </div>
-            <div className="foot">
-              <p>© 2012–2024 «Беркана»</p>
-            </div>
           </div>
         </motion.div>
       )}

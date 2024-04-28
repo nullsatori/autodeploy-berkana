@@ -9,10 +9,8 @@
   }
   .embla__slide {
     min-width: 100%;
-
   }
-  .mobile-slide.embla__slide{
-
+  .mobile-slide.embla__slide {
   }
   .embla__next,
   .embla__prev {
@@ -22,6 +20,7 @@
     position: relative;
     bottom: 50%;
     z-index: 2;
+    cursor: pointer;
   }
   .embla__next {
     left: 77%;
@@ -180,7 +179,6 @@
       margin: 0 auto;
     }
     .mobile-seeds {
-
       .info {
         width: 70vw;
       }
@@ -216,9 +214,8 @@
     }
 
     .mobile-seeds {
-
       margin: 10vh auto 0 auto;
-      .mobile-slide{
+      .mobile-slide {
         width: 90vw;
         background: white;
         margin: 0 2rem;
@@ -366,7 +363,6 @@
     }
   }
   @media screen and (width > 1300px) {
-
     .mobile-seeds {
       visibility: hidden;
       width: 0;
@@ -474,7 +470,6 @@
       }
     }
   }
-
 
   .bottom {
     flex-direction: column;

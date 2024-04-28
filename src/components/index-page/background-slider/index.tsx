@@ -139,7 +139,6 @@ const BackgroundSlider = () => {
     }
   }, [outerWidth]);
 
-
   return loading ? (
     <Loader loading={loading} />
   ) : (

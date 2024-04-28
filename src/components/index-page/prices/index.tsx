@@ -31,9 +31,10 @@ const Prices = () => {
       </div>
       {router.pathname !== "/about" && (
         <div className="downloads">
-
           <div className="card">
-            <p>СЗР <br/>— 2022</p>
+            <p>
+              СЗР <br />— 2022
+            </p>
             <svg
               width="108"
               height="105"
@@ -48,7 +49,9 @@ const Prices = () => {
             </svg>
           </div>
           <div className="card">
-            <p>Семена <br/>— 2022</p>
+            <p>
+              Семена <br />— 2022
+            </p>
             <svg
               width="108"
               height="105"

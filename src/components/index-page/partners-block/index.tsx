@@ -31,7 +31,6 @@ const PartnersBlock = () => {
 
   return (
     <div className="partners">
-
       <div className="partners-container">
         {partners.map((partner, index) => (
           <Link
@@ -46,7 +45,6 @@ const PartnersBlock = () => {
           </Link>
         ))}
       </div>
-
     </div>
   );
 };
